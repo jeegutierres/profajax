@@ -2,21 +2,64 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Prof. Ajax - Contato</title>
+    <title>Prof. Ajax - Aulas</title>
 </head>
 
 <body>
     <header>
+        <img src="imagens/capa1.png" alt="capa" width="1300" height="180"><br>
+
         <nav style="text-align: center;">
             <a href="index.html" target="_blank">Home</a> ♦<!--alt+4-->
+            <a href="musicas.html" target="_blank">Músicas para Programação</a> ♦
+            <a href="aulas.html" target="_blank">Aulas</a> ♦
             <a href="contato.html" target="_blank">Contato</a>
         </nav>
-        
-        <h1>Contato</h1>
-
+    </header>
+    <hr>
 
 <main>
+    <h2>Contato:</h2>
+    <p>Agende sua primeira aula <strong>grátis!</strong></p>
+    
+    <form method="post" action=""></form>
+        <label for="nome"><strong>Nome: *</strong></label>
+        <input id="nome" type="text" name="txt-nome" size="100" required><br><br>
+
+        <label for="email"><strong>E-mail: *</strong></label>
+        <input id="email" type="email" name="txt-email" size="62" required>
+
+        <label for="telefone"><strong>Telefone: *</strong></label>
+        <input id="telefone" type="tel" name="txt-telefone" required><br><br>
+
+        <label for="unidade"><strong>Unidade de preferência:</strong></label>
+        <select id="unidade" name="sel-unidade">
+            <option value="" hidden>Selecione um item</option>
+            <option>Bela Vista</option>
+            <option>Tatuapé</option>
+            <option>Santana</option>
+            <option>São José do Rio Preto</option>
+        </select>
+
+        <label for="data"><strong>Data:</strong></label>
+        <input id="data" type="date" name="dat-data">
+
+        <label for="horario"><strong>Horário:</strong></label>
+        <input id="horario" type="time" name="tim-horario"><br><br>
+
+        <label for="comochegou"><strong>Como chegou ao nosso site?</strong></label><br>
+        <input id="comochegou" type="radio" name="rad-comochegou" value="facebook">Facebook<br>
+        <input id="comochegou" type="radio" name="rad-comochegou" value="instagram">Instagram<br>
+        <input id="comochegou" type="radio" name="rad-comochegou" value="google">Google<br>
+        <input id="comochegou" type="radio" name="rad-comochegou" value="email">E-mail de convite<br>
+        <input id="comochegou" type="radio" name="rad-comochegou" value="outros">Outros<br><br>
+
+        <label for="mensagem"><strong>Mensagem:</strong></label><br>
+        <textarea id="mensagem" rows="5" cols="50"></textarea><br><br>
+
+        <button>Enviar</button>
 </main>
+    
 
 <footer>
 </footer>
